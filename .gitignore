@@ -1,0 +1,8 @@
+/coverage
+/demo/dist
+/ts-react-component
+/lib
+/node_modules
+/umd
+npm-debug.log*
+.idea/

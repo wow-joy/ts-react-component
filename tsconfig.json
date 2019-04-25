@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "allowJs": false,                       // 允许编译 javascript 文件, 与declaration不能同时存在
+    "checkJs": false,                       // 报告 javascript 文件中的错误
+    "sourceMap": false,
+    "outDir": "./ts-react-component/es",                        // 指定输出目录
+    "strictNullChecks": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "jsx": "preserve",
+    "declaration": true,                   // 生成相应的 '.d.ts' 文件
+    "noUnusedParameters": true,
+    "noUnusedLocals": true,
+    "noImplicitAny": true,
+    "target": "es6",
+    "lib": ["dom", "es7"]
+  },
+  // files 优先级高于include和exclude
+  // 如果不指定files, 默认值是整个项目或者是指定值，files include加上files
+  "exclude": ["node_modules", "lib", "es"] // 先计算include，在计算exclude
+}
